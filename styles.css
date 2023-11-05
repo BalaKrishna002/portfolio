@@ -12,6 +12,9 @@ header {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    border: 1px solid #dbc5c5;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
@@ -46,6 +49,7 @@ nav a:hover {
     margin: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Add this CSS to style the horizontal lines under section headings */
