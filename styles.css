@@ -1,11 +1,12 @@
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+/* Update the font family for the entire website */
+body, footer{
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
 }
 
+/* Style the header */
 header {
     background-color: #333;
     color: #fff;
@@ -13,6 +14,12 @@ header {
     padding: 20px 0;
 }
 
+header h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 36px;
+}
+
+/* Style the navigation links */
 nav ul {
     list-style: none;
 }
@@ -22,22 +29,103 @@ nav ul li {
     margin: 0 20px;
 }
 
-/* Style the navigation links */
 nav a {
-    text-decoration: none; /* Remove underline */
-    color: #fff; /* Link color */
-    transition: color 0.3s; /* Smooth color transition on hover */
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
 }
 
-/* Change link color on hover */
 nav a:hover {
-    color: #ff9900; /* New link color on hover */
+    color: #ff9900;
 }
 
+/* Style sections */
 .section {
     padding: 20px;
     background-color: #fff;
     margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Add this CSS to style the horizontal lines under section headings */
+.section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #0077b5; 
+    margin-top: 10px; 
+}
+
+/* Adjust the line color on hover for a subtle interactive effect */
+.section h2:hover::after {
+    background-color: #005f93;
+}
+
+
+/* Style the "About Me" section */
+#about h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+#about p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Add this CSS to style the images in the portfolio section */
+.portfolio-item img {
+    display: block; 
+    margin: 0 auto; 
+    max-width: 75%; 
+    border: 2px solid #ddd; 
+    border-radius: 5px; 
+    margin: 10px auto; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+/* Style the "Contact Me" section */
+#contact h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+#contact p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Style the links in the "Contact Me" section */
+#contact a {
+    text-decoration: none;
+    color: #0077b5;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    color: #005f93;
+}
+
+/* Add this to your CSS for button styling */
+.btn {
+    display: inline-block;
+    margin-left: auto;
+    padding: 10px 20px;
+    background-color: #0077b5;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #005f93;
 }
 
 /* Add more CSS for styling as needed */
