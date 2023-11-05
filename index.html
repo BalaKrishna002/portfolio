@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bala Krishna Makineni</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Your introduction and background information go here.</p>
+    </section>
+
+    <section id="portfolio" class="section">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">
+            <!-- <img src="project1.jpg" alt="Project 1"> -->
+            <h3>Project 1</h3>
+            <p>Description of Project 1.</p>
+        </div>
+        <div class="portfolio-item">
+            <!-- <img src="project2.jpg" alt="Project 2"> -->
+            <h3>Project 2</h3>
+            <p>Description of Project 2.</p>
+        </div>
+        <!-- Add more portfolio items as needed -->
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>You can reach me at your.email@example.com</p>
+    </section>
+
+    <footer style="text-align: center;">
+        <p>&copy; <span id="year"></span> Bala Krishna</p>
+    </footer>
+
+    <script>
+        const element = document.getElementById("year")
+        element.textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
