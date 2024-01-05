@@ -14,3 +14,9 @@ function toogle(){
         hiddenContent.style.display = 'none'; // Hide the content
     }
 }
+
+// JavaScript code for hiding the loader when the page is loaded
+window.addEventListener('load', function() {
+    const loader = document.getElementById('loader');
+    loader.style.display = 'none';
+});
