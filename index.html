@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bala Krishna Makineni</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
-        <h1>Bala Krishna Makineni</h1>
+        
         <nav>
-            <ul>
+            <h1>Bala Krishna Makineni</h1>
+            <ul id="menu">
+                <hr class="line">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="assets/Bala_Krishna_Makineni_Resume.pdf" download="Bala_Krishna_Makineni_Resume.pdf">Resume ⬇️</a></li>
+                <li><a href="assets/Bala_Krishna_Makineni_Resume.pdf" download="Bala_Krishna_Makineni_Resume.pdf" target="_blank">Resume⬇️</a></li>
             </ul>
         </nav>
+
+        <button id="toogle" onclick="toogle()">&#9776;</button>
     </header>
 
     <section id="about" class="section">
@@ -64,12 +71,15 @@
 
     <section id="contact" class="section">
         <h2>Contact Me</h2>
-        <p>You can reach me through the following methods:</p>
+        <p>You can reach me out from:</p>
         <ul>
             <li>Email: makineni8008@gmail.com</li>
             <li>Phone: +918008560459</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/makineni-bala-krishna-58a880227/" target="_blank">LinkedIn Profile</a></li>
-            <li>GitHub: <a href="https://github.com/BalaKrishna002" target="_blank">GitHub Profile</a></li>
+            <li><i class="fab fa-linkedin" style="color: #0077b5; font-size: 20px;"></i> <a href="https://www.linkedin.com/in/makineni-bala-krishna-58a880227/" target="_blank">LinkedIn Profile</a></li>
+            <li><i class="fab fa-github" style="color: #333; font-size: 20px;"></i> <a href="https://github.com/BalaKrishna002" target="_blank">GitHub Profile</a></li>
+            <li><i class="fab fa-twitter" style="color: #1da1f2; font-size: 20px;"></i> <a href="https://twitter.com/BalaKrishna_2" target="_blank">Twitter profile</a></li>
+            <li><i class="fab fa-medium" style="color: #00ab6c; font-size: 20px;"></i> <a href="https://medium.com/@balakrishna-02" target="_blank">Medium Profile</a></li>
+            <li><i class="fab fa-instagram" style="color: #e4405f; font-size: 20px;"></i> <a href="https://www.instagram.com/balakrishna__02/" target="_blank">Instagram Profile</a></li>
         </ul>
     </section>
 
@@ -77,9 +87,6 @@
         <p>Copyright &copy;<span id="year"></span> Bala Krishna</p>
     </footer>
 
-    <script>
-        const element = document.getElementById("year")
-        element.textContent = new Date().getFullYear();
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>

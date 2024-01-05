@@ -29,7 +29,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin: 0 1em;
 }
 
 nav a {
@@ -40,6 +40,57 @@ nav a {
 
 nav a:hover {
     color: #ff9900;
+}
+
+#toogle{
+    display: none;
+}
+
+.line{
+    display: none;
+}
+
+@media screen and (max-width: 700px){
+    header{
+        display: flex;
+        justify-content: space-around; 
+    }
+
+    nav{
+       display: block;
+       font-size: 10px;
+       margin-top: 0;
+    }
+
+    header h1{
+        font-size: 20px;
+        margin-top: 0;
+    }
+    
+    #toogle{
+        display: contents;
+        color: #fff;
+        font-size: x-large;
+        cursor: pointer;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    nav ul li{
+        text-align: left;
+        display: block;
+        line-height: 2;
+        font-size: 15px;
+    }
+
+    .line{
+        display: block;
+        color: #fff;
+    }
+
+    
 }
 
 /* Style sections */
@@ -130,6 +181,27 @@ nav a:hover {
 
 .btn:hover {
     background-color: #005f93;
+}
+
+/* Adjust icon colors if needed */
+.github-icon {
+    color: #333;
+}
+
+.linkedin-icon {
+color: #0077b5;
+}
+
+.twitter-icon {
+color: #1da1f2;
+}
+
+.medium-icon {
+color: #00ab6c;
+}
+
+.instagram-icon {
+color: #e4405f;
 }
 
 /* Add more CSS for styling as needed */
