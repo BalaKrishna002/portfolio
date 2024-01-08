@@ -7,6 +7,21 @@ body, footer{
     box-sizing: border-box;
 }
 
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+h3{
+    font-size: 20px;
+    color: #2a2929; 
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 /* Style the header */
 header {
     background-color: #333;
@@ -56,7 +71,8 @@ nav a:hover {
 @media screen and (max-device-width: 700px){
     header{
         display: flex;
-        justify-content: space-around; 
+        justify-content: space-around;
+         
     }
 
     nav{
@@ -89,13 +105,13 @@ nav a:hover {
 
     .line{
         display: block;
-        color: #fff;
+        border: 1px solid #fff;
     }
 
     
 }
 
-/* Style sections */
+/* CSS Style for sections */
 .section {
     padding: 20px;
     background-color: #fff;
@@ -122,61 +138,40 @@ nav a:hover {
 
 
 /* Style the "About Me" section */
-#about h2 {
-    font-size: 24px;
-    color: #333;
+
+
+/* CSS to style the project section */
+
+.project-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px 5px 5px;
+    margin-bottom: 10px;
 }
 
-#about p {
-    font-size: 16px;
-    line-height: 1.5;
+.project-item:nth-of-type(even){
+    flex-direction: row-reverse;
 }
 
-/* Add this CSS to style the images in the portfolio section */
-
-.portfolio-item:nth-child(n+2){
-    order: 1;
+.project-item h3{
+    margin-top: 0;
+    font-weight: bolder;
 }
  
-.portfolio-item img {
+.project-item img {
     display: block; 
     margin: 0 auto; 
-    max-width: 75%; 
+    width: 50%; 
     border: 2px solid #ddd; 
     border-radius: 5px; 
     margin: 10px auto; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
-
-
-/* Style the "Contact Me" section */
-#contact h2 {
-    font-size: 24px;
-    color: #333;
-}
-
-#contact p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-/* Style the links in the "Contact Me" section */
-#contact a {
-    text-decoration: none;
-    color: #0077b5;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-#contact a:hover {
-    color: #005f93;
-}
-
-/* Add this to your CSS for button styling */
 .btn {
     display: inline-block;
     margin-left: auto;
+    margin-top: 10px;
     padding: 10px 20px;
     background-color: #0077b5;
     color: #fff;
@@ -190,33 +185,40 @@ nav a:hover {
     background-color: #005f93;
 }
 
-/* Adjust icon colors if needed */
-.github-icon {
-    color: #333;
+@media screen and (max-device-width: 700px){
+    .project-item{
+        display: block;
+    }
+
+    .project-item img{
+        width: 90%;
+    }
 }
 
-.linkedin-icon {
-color: #0077b5;
+/* Style the "Contact Me" section */
+
+
+/* Style the links in the "Contact Me" section */
+#contact a {
+    text-decoration: none;
+    color: #0077b5;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-.twitter-icon {
-color: #1da1f2;
+#contact a:hover {
+    color: #005f93;
 }
 
-.medium-icon {
-color: #00ab6c;
-}
-
-.instagram-icon {
-color: #e4405f;
-}
+/* CSS style for social media icons */
 
 i{
     margin-right: 5px;
     font-size: 20px;
 }
 
-/* Loader styles */
+/* CSS for page Loader styles */
+
 .loader-wrapper {
     position: fixed;
     top: 0;
@@ -231,17 +233,17 @@ i{
 }
   
 .loader {
-border: 4px solid #f3f3f3; /* Light grey border */
-border-top: 4px solid #333; /* Blue border */
-border-radius: 50%;
-width: 40px;
-height: 40px;
-animation: spin 2s linear infinite; /* Spinner animation */
+    border: 4px solid #f3f3f3; /* Light grey border */
+    border-top: 4px solid #333; /* Blue border */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite; /* Spinner animation */
 }
 
 @keyframes spin {
-0% { transform: rotate(0deg); }
-100% { transform: rotate(360deg); }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 /* Add more CSS for styling as needed */
