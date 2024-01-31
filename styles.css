@@ -76,7 +76,7 @@ nav a:hover {
     display: none;
 }
 
-@media screen and (max-device-width: 700px){
+@media screen and (max-width: 600px){
     header{
         display: flex;
         flex-direction: row-reverse;
@@ -363,7 +363,7 @@ nav a:hover {
     background-color: #005f93;
 }
 
-@media screen and (max-device-width: 700px){
+@media screen and (max-width: 600px){
     .project-item{
         display: block;
     }
