@@ -4,6 +4,7 @@ body, footer{
     font-size: 16px;
     line-height: 1.6;
     color: #333;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -22,22 +23,42 @@ p {
     line-height: 1.5;
 }
 
+/* CSS for fixed buttom pointing to top */
+
+.arrow{
+    position: fixed;
+    bottom: 2rem;
+    right: 1.8rem;
+}
+
+.top{
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    cursor: pointer;
+    outline: none;
+    z-index: 500;
+}
+
+
+
 /* Style the header */
 header {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+    margin: 0 auto;
     border: 1px solid #dbc5c5;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
-}
-
-header .profile-pic{
-    width: 20%; 
-    border-radius: 10%;
+    
 }
 
 header h1 {
@@ -80,8 +101,7 @@ nav a:hover {
     header{
         display: flex;
         flex-direction: row-reverse;
-        justify-content: center;
-         
+        justify-content: center;   
     }
 
     nav{
@@ -129,6 +149,10 @@ nav a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.section h2{
+    margin: 0;
+}
+
 /* Add this CSS to style the horizontal lines under section headings */
 .section h2::after {
     content: '';
@@ -152,7 +176,7 @@ nav a:hover {
 .timeline {
     position: relative;
     max-width: 1200px;
-    margin: 5rem auto;
+    margin: 2rem auto;
   }
   
   /* The actual timeline (the vertical ruler) */
@@ -163,7 +187,7 @@ nav a:hover {
     background-color: #333;
     top: 0;
     bottom: 0;
-    left: 50%;
+    left: 50%;  /*changed*/
     margin-left: -3px;
   }
   
@@ -192,7 +216,7 @@ nav a:hover {
   
   /* Place the container to the left */
   .left {
-    left: 0%;
+    left: 0%; /* changed*/
   }
   
   /* Place the container to the right */
@@ -274,6 +298,8 @@ nav a:hover {
     .right {
     left: 0%;
     }
+
+    
   }
 
   .coding-platforms{
@@ -281,6 +307,10 @@ nav a:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
+  }
+
+  .coding-platforms img{
+    width: 3rem;
   }
 
   /* CSS to style "Skills" section */
