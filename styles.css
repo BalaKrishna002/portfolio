@@ -29,6 +29,7 @@ p {
     position: fixed;
     bottom: 2rem;
     right: 1.8rem;
+    margin: 0;
 }
 
 .top{
@@ -43,8 +44,6 @@ p {
     outline: none;
     z-index: 500;
 }
-
-
 
 /* Style the header */
 header {
