@@ -45,13 +45,35 @@ p {
     z-index: 500;
 }
 
+/* Blog post notification */
+
+.notification {
+    background-color: #f8d7da; /* Red color, you can adjust it */
+    color: #721c24; /* Text color, you can adjust it */
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it appears on top */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+
+.close-btn {
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 /* Style the header */
 header {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    margin: 0 auto;
+    margin: 60px auto 0 auto;
     border: 1px solid #dbc5c5;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -63,6 +85,17 @@ header {
 header h1 {
     font-family: 'Lobster', cursive;
     font-size: 2.5rem;
+    margin: 3px;
+}
+
+.personal-contact{
+    display: flex;
+    justify-content: center;
+    font-size: 2px;
+}
+
+.personal-contact p{
+    margin-right: 10px;
 }
 
 /* Style the navigation links */
@@ -419,15 +452,16 @@ nav a:hover {
 
 /* CSS style for social media icons */
 
-.personal-contact{
-    text-align: center;
-}
-
 .social-media{
     display: flex;
     justify-content: center;
     gap: 2rem;
     font-size: 1.5rem;
+}
+
+footer{
+    text-align: center;
+    margin: 2rem auto;
 }
 
 

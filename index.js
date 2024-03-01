@@ -3,6 +3,14 @@
 const element = document.getElementById("year")
 element.textContent = new Date().getFullYear();
 
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".close-btn").addEventListener("click", function() {
+        var notification = document.querySelector(".notification");
+        notification.style.top = "-60px"; // Adjust this value to move notification upwards
+        document.getElementById("header").style.marginTop = "0"; // Adjust this value to move content downwards
+    });
+});
+
 // Toggle Menu bar
 function toogle(){
     const hiddenContent = document.getElementById('menu');
